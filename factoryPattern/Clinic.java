@@ -7,7 +7,6 @@ public class Clinic {
 
         Scanner input = new Scanner(System.in);
 
-        while (true){
         System.out.println("[1] Dog");
         System.out.println("[2] Cat");
         System.out.println("[3] Exit");
@@ -30,12 +29,6 @@ public class Clinic {
                 petFile.setPet(pet);
                 ((Cat) pet).setNoOfLives(9);
                 break;
-            case 3: 
-                System.out.print("Terminating the program");
-                System.exit(0);
-                input.close();
-                break;
-        }
 
         System.out.println("Pet id is " + petFile.getPetId());
         System.out.println("Pet name is " + petFile.getPetName());
